@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" android:layout_height="fill_parent">
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_height="140dip" android:layout_gravity="top" android:id="@+id/imageView1" android:src="@drawable/logobig" android:layout_width="100dip"></ImageView>
+        <LinearLayout android:layout_height="fill_parent" android:orientation="vertical" android:layout_width="fill_parent" android:id="@+id/linearLayout2" android:gravity="center">
+            <TextView android:layout_width="fill_parent" android:gravity="center" android:layout_height="wrap_content" android:text="@string/date" android:id="@+id/txtScreeningTime" android:layout_marginTop="10dip"></TextView>
+            <TextView android:layout_width="fill_parent" android:text="@string/sampleFilmName" android:gravity="center_vertical|center_horizontal" android:textStyle="bold" android:textSize="25dip" android:id="@+id/txtFilmTitle" android:layout_height="wrap_content"></TextView>
+        </LinearLayout>        
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/linearLayout3" android:orientation="horizontal" android:layout_gravity="center" android:gravity="center">
+        <LinearLayout android:layout_width="wrap_content" android:id="@+id/linearLayout7" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/attendance" android:layout_marginRight="15dip" android:id="@+id/textView3" android:layout_gravity="center"></TextView>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/full" android:id="@+id/txtAttendanceTotal" android:textSize="60dip"></TextView>
+        </LinearLayout>
+        <ImageView android:layout_marginLeft="40dip" android:src="@drawable/bbfc_12" android:layout_height="60dip" android:layout_width="60dip" android:scaleType="centerInside" android:id="@+id/imgCert"></ImageView>
+    </LinearLayout>
+    
+    <ScrollView android:layout_marginBottom="100dip" android:layout_marginLeft="15dip" android:layout_marginRight="15dip" android:layout_height="fill_parent" android:id="@+id/scrollView1" android:layout_width="fill_parent">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center|center_horizontal" android:stretchColumns="1" android:id="@+id/tblTickets">
+        	<TableRow android:id="@+id/tableRow1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        		<TextView android:textSize="15dip" android:text="Members Ticket" android:id="@+id/textView5" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="left"></TextView>
+        		<TextView android:textSize="15dip"  android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView6" android:text="100" android:layout_gravity="right"></TextView>
+        
+        	</TableRow>
+        	<TableRow android:id="@+id/tableRow2" android:layout_height="fill_parent" android:layout_width="wrap_content">
+        		<TextView android:textSize="15dip"  android:text="Non-Members Ticket" android:id="@+id/textView15" android:layout_height="wrap_content" android:layout_width="fill_parent"></TextView>
+        		<TextView android:textSize="15dip"  android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView16" android:text="226" android:gravity="right"></TextView>        
+        	</TableRow>        	
+        </TableLayout>
+    </ScrollView>
+    <LinearLayout android:layout_marginTop="-100dip" android:id="@+id/linearLayout46" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:layout_gravity="center" android:orientation="vertical">
+        <LinearLayout android:id="@+id/linearLayout15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:layout_gravity="center">
+            <LinearLayout android:layout_height="fill_parent" android:id="@+id/linearLayout5" android:orientation="vertical" android:layout_marginRight="90dip" android:layout_width="fill_parent">
+                <TextView android:layout_height="wrap_content" android:gravity="center|center_horizontal" android:text="@string/startsin" android:id="@+id/txtCountdownHelp" android:layout_width="fill_parent"></TextView>
+                <TextView android:gravity="center" android:layout_height="wrap_content" android:text="00:00" android:textSize="30dip" android:id="@+id/txtCountdown" android:layout_width="fill_parent"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:id="@+id/linearLayout6" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:gravity="center_horizontal" android:layout_height="wrap_content" android:id="@+id/textView7" android:text="@string/scrends"></TextView>
+                <TextView android:gravity="center" android:layout_height="wrap_content" android:text="00:00" android:textSize="30dip" android:layout_width="fill_parent" android:id="@+id/txtScrEnd"></TextView>
+            </LinearLayout>
+	        
+	    </LinearLayout>    
+	    <LinearLayout android:id="@+id/linearLayout4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:layout_gravity="center">
+	        <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autoupdate" android:layout_gravity="center_horizontal" android:layout_marginRight="20dip" android:id="@+id/chkAutoRefresh"></CheckBox>
+	    	
+	    	<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Refresh" android:id="@+id/btnRefresh" android:layout_marginRight="30dip"></Button>
+	    	<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Logout" android:id="@+id/btnLogout"></Button>
+	    </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

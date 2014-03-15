@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Login!</string>
+    <string name="app_name">WSC Sales</string>
+    <string name="login">Login</string>
+    <string name="username">Username: </string>
+    <string name="password">Password:   </string>
+    <string name="sampleFilmName">Film Title that is Very Very Long: Really it Is!</string>
+    <string name="attendance">Attendance: </string>
+    <string name="full">336</string>
+    <string name="date">Thurs 6th Oct, 19:30</string>
+    <string name="ticketselling">Ticket Selling</string>
+    <string name="ticketsales">Enable Ticket Selling: </string>
+    <string name="autoupdate">Auto Refresh</string>
+    <string name="scrends">Screening Ends</string>
+    <string name="startsin">Starts In</string>
+</resources>
